@@ -1,9 +1,11 @@
 export class Bowling {
-  public roll(pins: unknown): unknown {
-    throw new Error("Replace with implementation");
+  private currentScore = 0;
+
+  public roll(pins: number) {
+    this.currentScore += pins;
   }
 
   public score(): unknown {
-    throw new Error("Replace with implementation");
+    return this.currentScore;
   }
 }
